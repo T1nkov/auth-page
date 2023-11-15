@@ -21,23 +21,23 @@ block.addEventListener("click", function (event) {
   input.value = event.target.textContent;
   block.style = "visibility: hidden";
   img.style = "background-image: url(./cursup.svg)";
-  flag = false;  flag = false;
+  flag = false;
+  flag = false;
+  flag = false;
 });
 
 select.addEventListener("dblclick", function (event) {
   input.disabled = false;
   block.style = "visability: visible";
   input.value = "";
-
 });
 
-input.addEventListener('keydown', (event)=>{
-    if(event.key != 'Enter') return
-    else{
-        const p = document.createElement('p')
-        p.textContent = input.value
-        block.appendChild(p)
-        input.value = ''
-
-    }
-})
+input.addEventListener("keydown", (event) => {
+  if (event.key != "Enter") return;
+  else {
+    const p = document.createElement("p");
+    p.textContent = input.value;
+    block.appendChild(p);
+    input.value = "";
+  }
+});
