@@ -39,5 +39,10 @@ input.addEventListener("keydown", (event) => {
     p.textContent = input.value;
     block.appendChild(p);
     input.value = "";
+  
+    const p4n = document.createElement("p");
+    p.textContent = input.value;
+    block.appendChild(p);
+    input.value = "";
   }
 });
